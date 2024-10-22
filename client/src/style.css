@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #00695c;
+}
+
+/* Container for the form and user list */
+.form-container, .table-container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Center the form */
+form {
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the input box horizontally */
+}
+
+/* Style the input box */
+input[type="text"], input[type="number"] {
+  width: 100%; /* Make the input box take the full width of the form */
+  padding: 10px;
+  margin: 10px 0; /* Add some margin for spacing */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+label {
+  width: calc(50% - 10px);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+button[type="submit"] {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+/* Table Styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #b2dfdb;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #e0f2f1;
+}
+
+.user-table tr:hover {
+  background-color: #b2dfdb;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px; /* Add spacing between buttons */
+}
+
+.edit, .delete {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.edit {
+  background-color: #388e3c;
+}
+
+.edit:hover {
+  background-color: #2e7d32;
+}
+
+.delete {
+  background-color: #d32f2f;
+}
+
+.delete:hover {
+  background-color: #c62828;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container, .table-container {
+    padding: 10px;
+  }
+
+  input[type="text"], input[type="number"], input[type="checkbox"], label {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+.user-list-heading {
+  font-family: 'Arial, sans-serif';
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #00796b;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.user-form-heading {
+  font-family: 'Arial, sans-serif';
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #28a745;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* UserForm Styles */
+.user-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:ghostwhite;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.user-form h2 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.user-form .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.user-form .checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-form .submit-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.user-form .submit-button:hover {
+  background-color: #004d40;
+}
